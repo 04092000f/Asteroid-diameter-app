@@ -86,10 +86,6 @@ def transform_view():
         # Keeping Default value of condition_code as 0
         x['condition_code'].replace([np.nan], 0, inplace=True)
 
-    if x['data_arc'] is np.nan:
-        yp = rfmis.predict(x[['n_obs_used','condition_code']])
-        x.loc[x['data_arc'].isna(),'data_arc']=yp
-
     if x['H'] is np.nan:
         yp = xH.predict(x[['q',"data_arc","n_obs_used"]])
         x.loc[x['H'].isna(),'H']=yp
