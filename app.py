@@ -63,7 +63,6 @@ def transform_view():
     # load the model from disk
     model = pickle.load(open('XGB_Updated_with_137681_pts.pkl', 'rb'))
     sd= pickle.load(open('Scalar.sav', 'rb'))
-    rfmis=pickle.load(open('RF_for_data_arc.pkl','rb'))
     xH=pickle.load(open('XGB_for_H.pkl','rb'))
     lmoid=pickle.load(open('Linear_for_moid.pkl','rb'))
     ohe=pickle.load(open('One-Hot-Encoder.sav','rb'))
