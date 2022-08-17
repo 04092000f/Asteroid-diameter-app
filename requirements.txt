@@ -3,6 +3,6 @@ gunicorn
 setuptools
 numpy
 scipy
-scikit-learn
+scikit-learn==1.0.2
 pandas
 xgboost
