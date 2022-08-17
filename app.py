@@ -35,7 +35,7 @@ def form():
                 <li>neo: Near Earth Object{Categorical feature with either Yes or No}</li>
                 <li>pha: Potentially Hazardous Asteroid{Categorical feature with either Yes or No}</li>
                 </ul>
-                <h3>Note:<h3>
+                <h3>Note:</h3>
                 <p>You just need to a csv file as an input. After adding the files, The backend model takes the required features for diameter prediction.<br>
                 <p>We get the value of Asteroid diameter once the model has done prediction</p>
                 <form action="/transform" method="post" enctype="multipart/form-data">
